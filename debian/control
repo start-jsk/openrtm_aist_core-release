@@ -1,0 +1,12 @@
+Source: ros-hydro-openrtm-aist-python
+Section: misc
+Priority: extra
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~), omniidl-python, python-omniorb, ros-hydro-catkin, unzip
+Homepage: http://ros.org/wiki/openrtm_aist_python
+Standards-Version: 3.9.2
+
+Package: ros-hydro-openrtm-aist-python
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, omniidl-python, python-omniorb
+Description: Python binding of OpenRTM-AIST (see openrtm_aist for further information). Note the its original development and maintainance is happening in AIST's repository. The URLs of the development repository and the issue tracker URLs shown is a port to rtm-ros-robotics project.
