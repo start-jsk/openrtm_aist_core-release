@@ -1,3 +1,25 @@
+## openrtm_aist_core - 1.1.0-9
+
+User `k-okada@kokada-t430s` released the packages in the `openrtm_aist_core` repository by running `/usr/bin/bloom-release --rosdistro groovy --track groovy openrtm_aist_core` on `Wed, 28 Aug 2013 06:39:14 -0000`
+
+These packages were released:
+- `openrtm_aist`
+- `openrtm_aist_core`
+- `openrtm_aist_python`
+
+Version of package(s) in repository `openrtm_aist_core`:
+- rosdistro version: `1.1.0-8`
+- old version: `1.1.0-8`
+- new version: `1.1.0-9`
+
+Versions of tools used:
+- bloom version: `0.4.4`
+- catkin_pkg version: `0.1.19`
+- rosdep version: `0.10.21`
+- rosdistro version: `0.2.13`
+- vcstools version: `0.1.31`
+
+
 ## openrtm_aist_core - 1.1.0-8
 
 User `k-okada@kokada-t430s` released the packages in the `openrtm_aist_core` repository by running `/usr/bin/bloom-release --rosdistro groovy --track groovy openrtm_aist_core` on `Tue, 27 Aug 2013 15:59:43 -0000`
