@@ -1,0 +1,12 @@
+Source: ros-hydro-openrtm-aist-core
+Section: misc
+Priority: extra
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin
+Homepage: http://ros.org/wiki/openrtm_common
+Standards-Version: 3.9.2
+
+Package: ros-hydro-openrtm-aist-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-openrtm-aist, ros-hydro-openrtm-aist-python
+Description: Metapackage that contains commonly used RT-Middleware-based modules. Althogh each of these packages by themselves are ROS-agnostic, you can use them over ROS together with the packages in rtmros_common.
