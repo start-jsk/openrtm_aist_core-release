@@ -1,3 +1,25 @@
+## openrtm_aist_core - 1.1.1-0
+
+User `n130s@130s-serval` released the packages in the `openrtm_aist_core` repository by running `/usr/bin/bloom-release --rosdistro groovy --track groovy openrtm_aist_core` on `Tue, 19 Nov 2013 02:17:54 -0000`
+
+These packages were released:
+- `openrtm_aist`
+- `openrtm_aist_core`
+- `openrtm_aist_python`
+
+Version of package(s) in repository `openrtm_aist_core`:
+- rosdistro version: `1.1.0-14`
+- old version: `1.1.0-14`
+- new version: `1.1.1-0`
+
+Versions of tools used:
+- bloom version: `0.4.4`
+- catkin_pkg version: `0.1.23`
+- rosdep version: `0.10.24`
+- rosdistro version: `0.2.17`
+- vcstools version: `0.1.32`
+
+
 ## openrtm_aist_core - 1.1.0-1
 
 User `n130s@130s-serval` released the packages in the `openrtm_aist_core` repository by running `/usr/bin/bloom-release openrtm_aist_core --track hydro --rosdistro hydro` on `Fri, 13 Sep 2013 11:11:27 -0000`
