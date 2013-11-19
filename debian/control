@@ -1,0 +1,12 @@
+Source: ros-groovy-openrtm-aist-core
+Section: misc
+Priority: extra
+Maintainer: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-catkin
+Homepage: http://ros.org/wiki/openrtm_common
+Standards-Version: 3.9.2
+
+Package: ros-groovy-openrtm-aist-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-openrtm-aist, ros-groovy-openrtm-aist-python
+Description: Metapackage that contains commonly used RT-Middleware-based modules. Althogh each of these packages by themselves are ROS-agnostic, you can use them over ROS together with the packages in rtmros_common. Its development is happening at openrtm.org/pub/OpenRTM-aist. The repository listed below is that of its ROS wrapper.
