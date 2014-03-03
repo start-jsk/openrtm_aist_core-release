@@ -7,8 +7,11 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/openrtm</url>
 
-  <rosdep name="tix" />
+  <rosdep name="unzip" />
+  <rosdep name="uuid" />
   <rosdep name="omniorb" />
+  <rosdep name="mk" />
+  <rosdep name="rostest" />
 
 </package>
 
