@@ -1,3 +1,25 @@
+## openrtm_aist_core (hydro) - 1.1.0-3
+
+User `n130s@yayoi` released the packages in the `openrtm_aist_core` repository into the `hydro` distro by running `/usr/bin/bloom-release openrtm_aist_core --track hydro --rosdistro hydro` on `Fri, 07 Mar 2014 10:56:33 -0000`
+
+These packages were released:
+- `openrtm_aist`
+- `openrtm_aist_core`
+- `openrtm_aist_python`
+
+Version of package(s) in repository `openrtm_aist_core`:
+- rosdistro version: `1.1.0-1`
+- old version: `1.1.0-2`
+- new version: `1.1.0-3`
+
+Versions of tools used:
+- bloom version: `0.5.2`
+- catkin_pkg version: `0.1.26`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## openrtm_aist_core (hydro) - 1.1.0-2
 
 User `n130s@yayoi` released the packages in the `openrtm_aist_core` repository into the `hydro` distro by running `/usr/bin/bloom-release openrtm_aist_core --track hydro --rosdistro hydro` on `Fri, 07 Mar 2014 10:54:49 -0000`
