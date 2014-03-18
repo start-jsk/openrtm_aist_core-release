@@ -1,3 +1,25 @@
+## openrtm_aist_core (groovy) - 1.1.0-5
+
+User `k-okada@kokada-t430s` released the packages in the `openrtm_aist_core` repository into the `groovy` distro by running `/usr/bin/bloom-release openrtm_aist_core --track groovy --rosdistro groovy` on `Tue, 18 Mar 2014 18:12:42 -0000`
+
+These packages were released:
+- `openrtm_aist`
+- `openrtm_aist_core`
+- `openrtm_aist_python`
+
+Version of package(s) in repository `openrtm_aist_core`:
+- rosdistro version: `1.1.0-4`
+- old version: `1.1.0-4`
+- new version: `1.1.0-5`
+
+Versions of tools used:
+- bloom version: `0.5.2`
+- catkin_pkg version: `0.1.25`
+- rosdep version: `0.10.25`
+- rosdistro version: `0.3.4`
+- vcstools version: `0.1.33`
+
+
 ## openrtm_aist_core (hydro) - 1.1.0-5
 
 User `k-okada@kokada-t430s` released the packages in the `openrtm_aist_core` repository into the `hydro` distro by running `/usr/bin/bloom-release openrtm_aist_core --track hydro --rosdistro hydro` on `Tue, 18 Mar 2014 18:10:14 -0000`
