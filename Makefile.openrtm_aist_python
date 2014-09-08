@@ -11,7 +11,7 @@ MD5SUM_FILE = $(FILENAME).md5sum
 MK_DIR      = $(shell rospack find mk)
 
 include $(MK_DIR)/download_unpack_build.mk
-PYTHONBIN   = python
+PYTHONBIN   = python2
 PYTHONDIR   = `$(PYTHONBIN) -c 'import sys; print "python%s"%sys.version[:3]'`
 SETUPTOOLS_ARG_EXTRA = "--install-layout=deb"
 
