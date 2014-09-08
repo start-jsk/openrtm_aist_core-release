@@ -1,0 +1,39 @@
+From 41d567a80b2809b1354506e3f2b30b7730aa6ef5 Mon Sep 17 00:00:00 2001
+From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Date: Tue, 9 Sep 2014 00:03:39 +0900
+Subject: [PATCH] copy rtm-config to global bin
+
+---
+ catkin.cmake |    9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/catkin.cmake b/catkin.cmake
+index f6e8043..b2da629 100644
+--- a/catkin.cmake
++++ b/catkin.cmake
+@@ -33,6 +33,12 @@ endif()
+ catkin_package(
+ )
+ 
++add_custom_command(
++  OUTPUT ${CATKIN_DEVEL_PREFIX}/bin/rtm-config
++  COMMAND cmake -E copy ${CATKIN_DEVEL_PREFIX}/lib/openrtm_aist/bin/rtm-config ${CATKIN_DEVEL_PREFIX}/bin/rtm-config
++  DEPENDS ${CATKIN_DEVEL_PREFIX}/lib/openrtm_aist/bin/rtm-config
++)
++add_custom_target(copy_rtm_config ALL DEPENDS ${CATKIN_DEVEL_PREFIX}/bin/rtm-config)
+ #############
+ ## Install ##
+ #############
+@@ -68,6 +74,9 @@ install(
+ install(DIRECTORY test share
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+   USE_SOURCE_PERMISSIONS)
++install(
++  FILES ${CATKIN_DEVEL_PREFIX}/bin/rtm-config
++  DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION})
+ 
+ # #debug codes
+ # #get_cmake_property(_variableNames VARIABLES)
+-- 
+1.7.9.5
+
