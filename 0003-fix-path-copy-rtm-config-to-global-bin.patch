@@ -1,0 +1,31 @@
+From a257f68267ebf44bf46fee85e643009a4ea74b54 Mon Sep 17 00:00:00 2001
+From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Date: Tue, 9 Sep 2014 16:48:25 +0900
+Subject: [PATCH 3/3] fix path: copy rtm-config to global bin
+
+---
+ catkin.cmake |    8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/catkin.cmake b/catkin.cmake
+index 036344a..53c41c7 100644
+--- a/catkin.cmake
++++ b/catkin.cmake
+@@ -93,6 +93,14 @@ install(
+    execute_process(COMMAND sed -i s@${openrtm_aist_SOURCE_DIR}@${CMAKE_INSTALL_PREFIX}/${CATKIN_PACKAGE_SHARE_DESTINATION}@g \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/${CATKIN_PACKAGE_BIN_DESTINATION}/bin/rtm-config)
+    ")
+ 
++ install(CODE
++  "execute_process(COMMAND echo \"fix \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/bin/rtm-config\")
++   execute_process(COMMAND echo \"    ${CATKIN_DEVEL_PREFIX} -> ${CMAKE_INSTALL_PREFIX}\")
++   execute_process(COMMAND echo \"    ${openrtm_aist_SOURCE_DIR} -> ${CMAKE_INSTALL_PREFIX}\")
++   execute_process(COMMAND sed -i s@${CATKIN_DEVEL_PREFIX}@${CMAKE_INSTALL_PREFIX}@g \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/bin/rtm-config)
++   execute_process(COMMAND sed -i s@${CATKIN_DEVEL_PREFIX}@${CMAKE_INSTALL_PREFIX}@g \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/bin/rtm-config)
++   execute_process(COMMAND sed -i s@${openrtm_aist_SOURCE_DIR}@${CMAKE_INSTALL_PREFIX}/${CATKIN_PACKAGE_SHARE_DESTINATION}@g \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/bin/rtm-config)
++   ")
+ 
+ install(CODE
+   "execute_process(COMMAND echo \"fix \$ENV{DESTDIR}/${CMAKE_INSTALL_PREFIX}/${CATKIN_PACKAGE_LIB_DESTINATION}/pkgconfig/openrtm-aist.pc\")
+-- 
+1.7.9.5
+

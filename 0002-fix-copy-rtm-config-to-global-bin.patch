@@ -1,0 +1,25 @@
+From 46a7f774ab27dfc5da721e1d3636a53446c9fec1 Mon Sep 17 00:00:00 2001
+From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Date: Tue, 9 Sep 2014 10:35:28 +0900
+Subject: [PATCH 2/3] fix: copy rtm-config to global bin
+
+---
+ catkin.cmake |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/catkin.cmake b/catkin.cmake
+index b2da629..036344a 100644
+--- a/catkin.cmake
++++ b/catkin.cmake
+@@ -75,7 +75,7 @@ install(DIRECTORY test share
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+   USE_SOURCE_PERMISSIONS)
+ install(
+-  FILES ${CATKIN_DEVEL_PREFIX}/bin/rtm-config
++  PROGRAMS ${CATKIN_DEVEL_PREFIX}/bin/rtm-config
+   DESTINATION ${CATKIN_GLOBAL_BIN_DESTINATION})
+ 
+ # #debug codes
+-- 
+1.7.9.5
+
