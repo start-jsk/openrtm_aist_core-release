@@ -1,7 +1,7 @@
-From 148a03e5f5684db1e164f2eef8697ca04cb4ffe7 Mon Sep 17 00:00:00 2001
+From 74fa443605149ceb6e3bcaf6a2cf3757273e289d Mon Sep 17 00:00:00 2001
 From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
 Date: Tue, 9 Sep 2014 10:34:30 +0900
-Subject: [PATCH 2/2] fix: copy rtm-config to global bin
+Subject: [PATCH 2/3] fix: copy rtm-config to global bin
 
 ---
  catkin.cmake |    2 +-
