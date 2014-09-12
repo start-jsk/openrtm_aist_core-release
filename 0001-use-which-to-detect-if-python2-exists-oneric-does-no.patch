@@ -1,0 +1,26 @@
+From 7eb05edcd8ab3bfd4c938c1eb5028cfce584270b Mon Sep 17 00:00:00 2001
+From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
+Date: Fri, 12 Sep 2014 10:41:54 +0900
+Subject: [PATCH] use which to detect if python2 exists, oneric does not have
+ python2
+
+---
+ Makefile.openrtm_aist_python |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile.openrtm_aist_python b/Makefile.openrtm_aist_python
+index e47069e..42eee3e 100644
+--- a/Makefile.openrtm_aist_python
++++ b/Makefile.openrtm_aist_python
+@@ -11,7 +11,7 @@ MD5SUM_FILE = $(FILENAME).md5sum
+ MK_DIR      = $(shell rospack find mk)
+ 
+ include $(MK_DIR)/download_unpack_build.mk
+-PYTHONBIN   = python2
++PYTHONBIN   = $(shell which python2 > /dev/null && echo python2 || echo python)
+ PYTHONDIR   = `$(PYTHONBIN) -c 'import sys; print "python%s"%sys.version[:3]'`
+ SETUPTOOLS_ARG_EXTRA = "--install-layout=deb"
+ 
+-- 
+1.7.9.5
+
