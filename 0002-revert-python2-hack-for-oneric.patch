@@ -1,22 +1,22 @@
-From 5d18c8ee02774619426dcc7b4555028a6e7228b6 Mon Sep 17 00:00:00 2001
+From 32948b6aec5dd9af22037c65c80b386626fa06a5 Mon Sep 17 00:00:00 2001
 From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
-Date: Mon, 8 Sep 2014 15:01:01 +0900
-Subject: [PATCH 1/2] oneirick does not have python2
+Date: Fri, 12 Sep 2014 10:33:36 +0900
+Subject: [PATCH 2/2] revert python2 hack for oneric
 
 ---
  Makefile.openrtm_aist_python |    2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Makefile.openrtm_aist_python b/Makefile.openrtm_aist_python
-index e47069e..d9fcd9f 100644
+index d9fcd9f..e47069e 100644
 --- a/Makefile.openrtm_aist_python
 +++ b/Makefile.openrtm_aist_python
 @@ -11,7 +11,7 @@ MD5SUM_FILE = $(FILENAME).md5sum
  MK_DIR      = $(shell rospack find mk)
  
  include $(MK_DIR)/download_unpack_build.mk
--PYTHONBIN   = python2
-+PYTHONBIN   = python
+-PYTHONBIN   = python
++PYTHONBIN   = python2
  PYTHONDIR   = `$(PYTHONBIN) -c 'import sys; print "python%s"%sys.version[:3]'`
  SETUPTOOLS_ARG_EXTRA = "--install-layout=deb"
  
