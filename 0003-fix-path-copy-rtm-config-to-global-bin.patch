@@ -1,4 +1,4 @@
-From 7d9439aaf48f6bac8131a88687aef48f9a88874b Mon Sep 17 00:00:00 2001
+From 56ce66a4e7cfad43dd5c6d405c76c5f8895fb099 Mon Sep 17 00:00:00 2001
 From: Kei Okada <k-okada@jsk.t.u-tokyo.ac.jp>
 Date: Tue, 9 Sep 2014 16:48:12 +0900
 Subject: [PATCH 3/3] fix path: copy rtm-config to global bin
